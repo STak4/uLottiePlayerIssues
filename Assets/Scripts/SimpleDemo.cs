@@ -6,10 +6,9 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-public class CrashDemo : MonoBehaviour
+public class SimpleDemo : MonoBehaviour
 {
     [Header("Lottie Player")]
-    //[SerializeField] List<LottieAnimationAsset> animationAssets;
     [SerializeField] List<ImageLottiePlayer> lottiePlayerPrefabs;
     
     [Header("View")]
@@ -37,8 +36,6 @@ public class CrashDemo : MonoBehaviour
     
     private void Add()
     {
-        // var json = jsonDropdown.options[jsonDropdown.value].text;
-        // var asset = Resources.Load(json, typeof(LottieAnimationAsset));
         var prefab = lottiePlayerPrefabs[jsonDropdown.value];
         
         var instance = Instantiate(prefab, lottieView.content) as ImageLottiePlayer;
