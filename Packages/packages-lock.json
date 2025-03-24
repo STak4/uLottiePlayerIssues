@@ -1,11 +1,10 @@
 {
   "dependencies": {
     "com.gilzoide.lottie-player": {
-      "version": "https://github.com/gilzoide/unity-lottie-player.git#1.0.2",
+      "version": "file:com.gilzoide.lottie-player@274803638a",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "274803638ac7d90e02860e255d993d3cdeac3d02"
+      "source": "embedded",
+      "dependencies": {}
     },
     "com.unity.burst": {
       "version": "1.8.19",
