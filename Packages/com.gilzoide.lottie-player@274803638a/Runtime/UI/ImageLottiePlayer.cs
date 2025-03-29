@@ -197,7 +197,8 @@ namespace Gilzoide.LottiePlayer
         protected override void OnValidate()
         {
             base.OnValidate();
-            if (IsActive())
+			// Avoid crash
+            if (IsActive() && !_animationAsset)
             {
                 RecreateAnimationIfNeeded();
             }
